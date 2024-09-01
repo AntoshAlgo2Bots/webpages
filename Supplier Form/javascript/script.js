@@ -41,120 +41,140 @@ function bank() {
 
 
 
-let organization_txt = `<div class="flex flex-wrap gap-x-20 mt-2 border-t-2 pt-3 border-gray-900">
-                <div>
-                    <label for="email"
-                        class="block  mb-2 font-bold text-xs font-medium text-gray-900 dark:text-white">Oraganigation
-                        Name :
-                    </label>
-                    <input type="text" placeholder="Enter oraganigation name"
-                        class="w-60 rounded-md border text-xs mb-4 border-gray-500 bg-white py-3 pl-2 text-[#6B7280] h-7 outline-none focus:border-[#6A64F1] focus:shadow-md" />
+let organization_txt = `
+                <div class="flex flex-wrap gap-x-20 mt-5 mt-2 border-t-2 pt-3 border-gray-900">
+                    <div>
+                        <label for=""
+                            class="block  mb-2 font-bold text-xs font-medium text-gray-900 dark:text-white">Oraganigation
+                            Name :
+                        </label>
+                        <input type="text" placeholder="Enter oraganigation name"
+                            class="w-60 rounded-md border text-xs mb-4 border-gray-500 bg-white py-3 pl-2 text-[#6B7280] h-7 outline-none focus:border-[#6A64F1] focus:shadow-md" />
+                    </div>
+
+                    <div>
+                        <label for="countries"
+                            class="block mb-2 text-xs font-medium text-gray-900 dark:text-white">Oraganigation Type :
+                        </label>
+                        <select id="countries"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-xs   rounded-md focus:ring-blue-500 focus:border-blue-500 block w-60 h-7 pl-2 pt-1 mb-4  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                            <option selected disabled>Select One Type</option>
+                            <option value="US">LLC</option>
+                            <option value="CA">Corporation</option>
+                            <option value="FR">Partnership</option>
+                            <option value="DE">Sole Proprietorship</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for=""
+                            class="block  mb-2 font-bold text-xs font-medium text-gray-900 dark:text-white">GST Number :
+                        </label>
+                        <input type="text" placeholder="Enter GST number"
+                            class="w-60 rounded-md border text-xs border-gray-500 bg-white py-3 pl-2 text-[#6B7280] h-7 outline-none focus:border-[#6A64F1] focus:shadow-md" />
+                    </div>
+                </div>
+
+                <div class="flex flex-wrap gap-x-20">
+                    <div>
+                        <label for=""
+                            class="block  mb-2 font-bold text-xs font-medium text-gray-900 dark:text-white">Supplier
+                            Code :
+                        </label>
+                        <input type="text" placeholder="Enter supplier name"
+                            class="w-60 rounded-md border text-xs border-gray-500 bg-white py-3 pl-2 text-[#6B7280] h-7 outline-none focus:border-[#6A64F1] focus:shadow-md" />
+                        
+                    </div>
+                    <div>
+                        <label for=""
+                            class="block  mb-2 font-bold text-xs font-medium text-gray-900 dark:text-white">Supplier
+                            Name :
+                        </label>
+                        <input type="text" placeholder="Enter supplier name"
+                            class="w-60 rounded-md border text-xs border-gray-500 bg-white py-3 pl-2 text-[#6B7280] h-7 outline-none focus:border-[#6A64F1] focus:shadow-md" />
+                    </div>
+
+                    <div>
+                        <label for=""
+                            class="block  mb-2 font-bold text-xs font-medium text-gray-900 dark:text-white">Supplier
+                            Type :
+                        </label>
+                        <input type="text" placeholder="Enter supplier type"
+                            class="w-60 rounded-md border mb-4 text-xs border-gray-500 bg-white py-3 pl-2 text-[#6B7280] h-7 outline-none focus:border-[#6A64F1] focus:shadow-md" />
+                    </div>
+
+                    
+                </div>
+                
+                <div class="flex flex-wrap gap-x-20">
+                    <div>
+                        <label for=""
+                            class="block  mb-2 font-bold text-xs font-medium text-gray-900 dark:text-white">Sub Supplier
+                            Type :
+                        </label>
+                        <input type="text" placeholder="Enter sub supplier type"
+                            class="w-60 rounded-md border text-xs mb-4 border-gray-500 bg-white py-3 pl-2 text-[#6B7280] h-7 outline-none focus:border-[#6A64F1] focus:shadow-md" />
+                    </div>
+                    <div>
+                        <label for=""
+                            class="block  mb-2 font-bold text-xs font-medium text-gray-900 dark:text-white">Supplier
+                            Status
+                            :
+                        </label>
+                        <input type="text" placeholder="Enter supplier status"
+                            class="w-60 rounded-md border text-xs mb-4 border-gray-500 bg-white py-3 pl-2 text-[#6B7280] h-7 outline-none focus:border-[#6A64F1] focus:shadow-md" />
+                    </div>
+                    <div>
+                        <label for=""
+                            class="block  mb-2 font-bold text-xs font-medium text-gray-900 dark:text-white">Starting
+                            Date :
+                        </label>
+                        <input type="date"
+                            class="w-60 rounded-md border text-xs mb-4 border-gray-500 bg-white py-3 pl-2 text-[#6B7280] h-7 outline-none focus:border-[#6A64F1] focus:shadow-md" />
+                    </div>
+                </div>
+                
+                <div class="flex flex-wrap gap-x-20">
+                    <div>
+                        <label for=""
+                            class="block  mb-2 font-bold text-xs font-medium text-gray-900 dark:text-white">Ending
+                            Date :
+                        </label>
+                        <input type="date"
+                            class="w-60 rounded-md border text-xs mb-4 border-gray-500 bg-white py-3 pl-2 text-[#6B7280] h-7 outline-none focus:border-[#6A64F1] focus:shadow-md" />
+                    </div>
+                    <div>
+                        <label for=""
+                            class="block  mb-2 font-bold text-xs font-medium text-gray-900 dark:text-white">Contact
+                            Person
+                            Name :
+                        </label>
+                        <input type="text" placeholder="Enter person name"
+                            class="w-60 rounded-md border text-xs mb-4 border-gray-500 bg-white py-3 pl-2 text-[#6B7280] h-7 outline-none focus:border-[#6A64F1] focus:shadow-md" />
+                    </div>
+
+                    <div>
+                        <label for=""
+                            class="block  mb-2 font-bold text-xs font-medium text-gray-900 dark:text-white">Contact
+                            Person
+                            :
+                        </label>
+                        <input type="text" placeholder="Enter person "
+                            class="w-60 rounded-md border text-xs mb-4 border-gray-500 bg-white py-3 pl-2 text-[#6B7280] h-7 outline-none focus:border-[#6A64F1] focus:shadow-md" />
+                    </div>
                 </div>
 
                 <div>
-                    <label for="countries"
-                        class="block mb-2 text-xs font-medium text-gray-900 dark:text-white">Oraganigation Type :
-                    </label>
-                    <select id="countries"
-                        class="bg-gray-50 border border-gray-300 text-gray-900 text-xs   rounded-md focus:ring-blue-500 focus:border-blue-500 block w-60 h-7 pl-2 pt-1 mb-4  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-                        <option selected disabled>Select One Type</option>
-                        <option value="US">LLC</option>
-                        <option value="CA">Corporation</option>
-                        <option value="FR">Partnership</option>
-                        <option value="DE">Sole Proprietorship</option>
-                    </select>
-                </div>
-
-                <div>
-                    <label for="email"
-                        class="block  mb-2 font-bold text-xs font-medium text-gray-900 dark:text-white">GST Number :
-                    </label>
-                    <input type="text" placeholder="Enter GST number"
-                        class="w-60 rounded-md border text-xs border-gray-500 bg-white py-3 pl-2 text-[#6B7280] h-7 outline-none focus:border-[#6A64F1] focus:shadow-md" />
-                </div>
-            </div>
-
-            <div class="flex flex-wrap gap-x-20">
-                <div>
-                    <label for="email"
-                        class="block  mb-2 font-bold text-xs font-medium text-gray-900 dark:text-white">Supplier Name :
-                    </label>
-                    <input type="text" placeholder="Enter supplier name"
-                        class="w-60 rounded-md border text-xs border-gray-500 bg-white py-3 pl-2 text-[#6B7280] h-7 outline-none focus:border-[#6A64F1] focus:shadow-md" />
-                </div>
-
-                <div>
-                    <label for="email"
-                        class="block  mb-2 font-bold text-xs font-medium text-gray-900 dark:text-white">Supplier Type :
-                    </label>
-                    <input type="text" placeholder="Enter supplier type"
-                        class="w-60 rounded-md border text-xs border-gray-500 bg-white py-3 pl-2 text-[#6B7280] h-7 outline-none focus:border-[#6A64F1] focus:shadow-md" />
-                </div>
-
-                <div>
-                    <label for="email"
-                        class="block  mb-2 font-bold text-xs font-medium text-gray-900 dark:text-white">Sub Supplier
-                        Type :
-                    </label>
-                    <input type="text" placeholder="Enter sub supplier type"
-                        class="w-60 rounded-md border text-xs mb-4 border-gray-500 bg-white py-3 pl-2 text-[#6B7280] h-7 outline-none focus:border-[#6A64F1] focus:shadow-md" />
-                </div>
-
-            </div>
-
-            <div class="flex flex-wrap gap-x-20">
-                <div>
-                    <label for="email"
-                        class="block  mb-2 font-bold text-xs font-medium text-gray-900 dark:text-white">Supplier Status
-                        :
-                    </label>
-                    <input type="text" placeholder="Enter supplier status"
-                        class="w-60 rounded-md border text-xs mb-4 border-gray-500 bg-white py-3 pl-2 text-[#6B7280] h-7 outline-none focus:border-[#6A64F1] focus:shadow-md" />
-                </div>
-                <div>
-                    <label for="email"
-                        class="block  mb-2 font-bold text-xs font-medium text-gray-900 dark:text-white">Starting Date :
-                    </label>
-                    <input type="date"
-                        class="w-60 rounded-md border text-xs mb-4 border-gray-500 bg-white py-3 pl-2 text-[#6B7280] h-7 outline-none focus:border-[#6A64F1] focus:shadow-md" />
-                </div>
-                <div>
-                    <label for="" class="block  mb-2 font-bold text-xs font-medium text-gray-900 dark:text-white">Ending
-                        Date :
-                    </label>
-                    <input type="date"
-                        class="w-60 rounded-md border text-xs mb-4 border-gray-500 bg-white py-3 pl-2 text-[#6B7280] h-7 outline-none focus:border-[#6A64F1] focus:shadow-md" />
-                </div>
-            </div>
-
-            <div class="flex flex-wrap gap-x-20">
-                <div>
-                    <label for=""
-                        class="block  mb-2 font-bold text-xs font-medium text-gray-900 dark:text-white">Contact Person
-                        Name :
-                    </label>
-                    <input type="text" placeholder="Enter person name"
-                        class="w-60 rounded-md border text-xs mb-4 border-gray-500 bg-white py-3 pl-2 text-[#6B7280] h-7 outline-none focus:border-[#6A64F1] focus:shadow-md" />
-                </div>
-
-                <div>
-                    <label for=""
-                        class="block  mb-2 font-bold text-xs font-medium text-gray-900 dark:text-white">Contact Person
-                        Email :
-                    </label>
-                    <input type="text" placeholder="Enter person email"
-                        class="w-60 rounded-md border text-xs mb-4 border-gray-500 bg-white py-3 pl-2 text-[#6B7280] h-7 outline-none focus:border-[#6A64F1] focus:shadow-md" />
-                </div>
-
-                <div>
-                    <label for="email"
-                        class="block  mb-2 font-bold text-xs font-medium text-gray-900 dark:text-white">Contact Person
-                        Number :
-                    </label>
-                    <input type="text" placeholder="Enter person number"
-                        class="w-60 rounded-md border text-xs border-gray-500 bg-white py-3 pl-2 text-[#6B7280] h-7 outline-none focus:border-[#6A64F1] focus:shadow-md" />
-                </div>
-            </div>`
+                    <div>
+                        <label for=""
+                            class="block  mb-2 font-bold text-xs font-medium text-gray-900 dark:text-white">Contact
+                            Person
+                            Number :
+                        </label>
+                        <input type="text" placeholder="Enter person number"
+                            class="w-60 rounded-md border text-xs border-gray-500 bg-white py-3 pl-2 text-[#6B7280] h-7 outline-none focus:border-[#6A64F1] focus:shadow-md" />
+                    </div>
+                </div>`
 
 
 

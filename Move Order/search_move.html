@@ -22,7 +22,7 @@
                             class=" w-40 inline-block mb-2 font-bold text-xs font-medium text-gray-900 dark:text-white">
                             Number :
                         </label>
-                        <input type="text"
+                        <input type="text" name="number"
                             class="w-40 rounded-md border text-xs border-gray-500 bg-white py-3 pl-2 text-[#6B7280] h-6 outline-none focus:border-[#6A64F1] focus:shadow-md" />
                     </div>
                     <div class="">
@@ -30,7 +30,7 @@
                             class="w-40 inline-block mb-2 font-bold text-xs font-medium text-gray-900 dark:text-white">Move
                             Order Type
                             : </label>
-                        <input type="text"
+                        <input type="text" name="move_order_type"
                             class="w-40 rounded-md border text-xs border-gray-500 bg-white py-3 pl-2 text-[#6B7280] h-6 outline-none focus:border-[#6A64F1] focus:shadow-md" />
                     </div>
                 </div>
@@ -45,14 +45,14 @@
                         class=" w-40 inline-block mb-2 font-bold text-xs font-medium text-gray-900 dark:text-white">Status
                         :
                     </label>
-                    <input type="text"
+                    <input type="text" name="status"
                         class="w-40 rounded-md border text-xs border-gray-500 bg-white py-3 pl-2 text-[#6B7280] h-6 outline-none focus:border-[#6A64F1] focus:shadow-md" />
                 </div>
                 <div class="">
                     <label
                         class="w-40 inline-block mb-2 font-bold text-xs font-medium text-gray-900 dark:text-white">Description
                         : </label>
-                    <input type="text"
+                    <input type="text" name="description"
                         class="w-40 rounded-md border text-xs border-gray-500 bg-white py-3 pl-2 text-[#6B7280] h-6 outline-none focus:border-[#6A64F1] focus:shadow-md" />
                 </div>
             </div>
@@ -66,21 +66,21 @@
                             class=" w-40 inline-block mb-2 font-bold text-xs font-medium text-gray-900 dark:text-white">
                             Transaction Type :
                         </label>
-                        <input type="text"
+                        <input type="text" name="transaction_type"
                             class="w-40 rounded-md border text-xs border-gray-500 bg-white py-3 pl-2 text-[#6B7280] h-6 outline-none focus:border-[#6A64F1] focus:shadow-md" />
                     </div>
                     <div class="">
                         <label
                             class="w-40 inline-block mb-2 font-bold text-xs font-medium text-gray-900 dark:text-white">Source
                             Subinv : </label>
-                        <input type="text"
+                        <input type="text" name="source_subinv"
                             class="w-40 rounded-md border text-xs border-gray-500 bg-white py-3 pl-2 text-[#6B7280] h-6 outline-none focus:border-[#6A64F1] focus:shadow-md" />
                     </div>
                     <div class="">
                         <label
                             class="w-40 inline-block mb-2 font-bold text-xs font-medium text-gray-900 dark:text-white">SO
                             Number : </label>
-                        <input type="text"
+                        <input type="text" name="so_number"
                             class="w-40 rounded-md border text-xs border-gray-500 bg-white py-3 pl-2 text-[#6B7280] h-6 outline-none focus:border-[#6A64F1] focus:shadow-md" />
                     </div>
 
@@ -90,7 +90,7 @@
                         <label
                             class="w-40 inline-block mb-2 font-bold text-xs font-medium text-gray-900 dark:text-white">Location
                             : </label>
-                        <input type="text"
+                        <input type="text" name="location"
                             class="w-40 rounded-md border text-xs border-gray-500 bg-white py-3 pl-2 text-[#6B7280] h-6 outline-none focus:border-[#6A64F1] focus:shadow-md" />
                     </div>
 
@@ -99,7 +99,7 @@
                             class="w-40 inline-block mb-2 font-bold text-xs font-medium text-gray-900 dark:text-white">Destination
                             Subinv
                             : </label>
-                        <input type="text"
+                        <input type="text" name="destination_subinv"
                             class="w-40 rounded-md border text-xs border-gray-500 bg-white py-3 pl-2 text-[#6B7280] h-6 outline-none focus:border-[#6A64F1] focus:shadow-md" />
                     </div>
                     <div class="">
@@ -108,7 +108,7 @@
                             Required
                             Subinv
                             : </label>
-                        <input type="date"
+                        <input type="date" name="date_required_subinv"
                             class="w-40 rounded-md border text-xs border-gray-500 bg-white py-3 pl-2 text-[#6B7280] h-6 outline-none focus:border-[#6A64F1] focus:shadow-md" />
                     </div>
                 </div>
@@ -130,18 +130,6 @@
                             data-tabs-target="#styled-profile" type="button" role="tab" aria-controls="profile"
                             aria-selected="false">Item</button>
                     </li>
-                    <!-- <li class="me-2" role="presentation">
-                        <button
-                            class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
-                            id="dashboard-styled-tab" data-tabs-target="#styled-dashboard" type="button" role="tab"
-                            aria-controls="dashboard" aria-selected="false">Indirect Responsibilites</button>
-                    </li>
-                    <li class="me-2" role="presentation">
-                        <button
-                            class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
-                            id="settings-styled-tab" data-tabs-target="#styled-settings" type="button" role="tab"
-                            aria-controls="settings" aria-selected="false">Securring Attributes</button>
-                    </li> -->
                 </ul>
             </div>
             <div id="default-styled-tab-content">
@@ -151,46 +139,46 @@
                         <div class="">
                             <label class="block mb-2 font-bold text-xs font-medium text-gray-900 dark:text-white">Line
                                 : </label>
-                            <input type="text"
+                            <input type="text" name="line"
                                 class="w-40 rounded-md border text-xs mb-3 border-gray-500 bg-white py-3 pl-2 text-[#6B7280] h-6 outline-none focus:border-[#6A64F1] focus:shadow-md" />
                         </div>
 
                         <div class="">
                             <label class="block mb-2 font-bold text-xs font-medium text-gray-900 dark:text-white">Item
                                 : </label>
-                            <input type="text"
+                            <input type="text" name="item"
                                 class="w-40 rounded-md border text-xs border-gray-500 bg-white py-3 pl-2 text-[#6B7280] h-6 outline-none focus:border-[#6A64F1] focus:shadow-md" />
                         </div>
                         <div class="">
                             <label
                                 class="block mb-2 font-bold text-xs font-medium text-gray-900 dark:text-white">Process
                                 Seq: </label>
-                            <input type="text"
+                            <input type="text" name="process_seq"
                                 class="w-40 rounded-md border text-xs mb-3 border-gray-500 bg-white py-3 pl-2 text-[#6B7280] h-6 outline-none focus:border-[#6A64F1] focus:shadow-md" />
                         </div>
                         <div class="">
                             <label
                                 class="block mb-2 font-bold text-xs font-medium text-gray-900 dark:text-white">Transaction
                                 Type : </label>
-                            <input type="text"
+                            <input type="text" name="transaction_type"
                                 class="rounded-md border text-xs border-gray-500 bg-white py-3 pl-2 text-[#6B7280] h-6 outline-none focus:border-[#6A64F1] focus:shadow-md" />
                         </div>
                         <div class="">
                             <label class="block mb-2 font-bold text-xs font-medium text-gray-900 dark:text-white">
                                 Date Required : </label>
-                            <input type="date"
+                            <input type="date" name="date_required"
                                 class="w-40 rounded-md border mb-3 text-xs border-gray-500 bg-white py-3 pl-2 text-[#6B7280] h-6 outline-none focus:border-[#6A64F1] focus:shadow-md" />
                         </div>
                         <div class="">
                             <label class="block mb-2 font-bold text-xs font-medium text-gray-900 dark:text-white">
                                 UOM : </label>
-                            <input type="text"
+                            <input type="text" name="uom"
                                 class="w-40 rounded-md border text-xs border-gray-500 bg-white py-3 pl-2 text-[#6B7280] h-6 outline-none focus:border-[#6A64F1] focus:shadow-md" />
                         </div>
                         <div class="">
                             <label class="block mb-2 font-bold text-xs font-medium text-gray-900 dark:text-white">
                                 Qty : </label>
-                            <input type="text"
+                            <input type="text" name="qty"
                                 class="w-40 rounded-md border text-xs border-gray-500 bg-white py-3 pl-2 text-[#6B7280] h-6 outline-none focus:border-[#6A64F1] focus:shadow-md" />
 
                             <!-- <button data-modal-target="authentication-modal" data-modal-toggle="authentication-modal"
@@ -211,12 +199,12 @@
                             <div
                                 class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
                                 <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-                                    <input name="type" type="radio" id="serial_txt"
+                                    <input name="serial_no" type="radio" id="serial_txt"
                                         class="before:content[''] peer relative h-3 w-3 cursor-pointer appearance-none rounded-full border border-blue-gray-200 text-gray-900 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-gray-900 checked:before:bg-gray-900 hover:before:opacity-10"
                                         name="no" checked />
                                     <label>Serial No / </label>
 
-                                    <input name="type" id="lot_no" type="radio"
+                                    <input name="lot_no" id="lot_no" type="radio"
                                         class="before:content[''] peer relative h-3 w-3 cursor-pointer appearance-none rounded-full border border-blue-gray-200 text-gray-900 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-gray-900 checked:before:bg-gray-900 hover:before:opacity-10"
                                         name="no" />
                                     <label>Lot Number</label>
@@ -247,7 +235,7 @@
                                                 <label for="" id=""
                                                     class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Serial
                                                     Number From</label>
-                                                <input type="number" name="" id=""
+                                                <input type="number" name="serial_no_from" id=""
                                                     class="bg-gray-50 border border-gray-300 mb-3 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
                                                     required />
                                             </div>
@@ -255,7 +243,7 @@
                                                 <label for="" id=""
                                                     class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Serial
                                                     Number To</label>
-                                                <input type="number" name="" id=""
+                                                <input type="number" name="serial_no_to" id=""
                                                     class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
                                                     required />
                                             </div>
@@ -269,7 +257,7 @@
                                         <label for="" id="serial_to"
                                             class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Lot
                                             Number</label>
-                                        <input type="number" name=""
+                                        <input type="number" name="lot_no"
                                             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
                                             required />
                                     </div>
@@ -281,49 +269,10 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-dashboard" role="tabpanel"
-                    aria-labelledby="dashboard-tab">
-                    <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong
-                            class="font-medium text-gray-800 dark:text-white">Dashboard tab's associated
-                            content</strong>.
-                        Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript
-                        swaps
-                        classes to control the content visibility and styling.</p>
-                </div> -->
-                <!-- <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-settings" role="tabpanel"
-                    aria-labelledby="settings-tab">
-                    <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong
-                            class="font-medium text-gray-800 dark:text-white">Settings tab's associated
-                            content</strong>.
-                        Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript
-                        swaps
-                        classes to control the content visibility and styling.</p>
-                </div>
-                <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-contacts" role="tabpanel"
-                    aria-labelledby="contacts-tab">
-                    <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong
-                            class="font-medium text-gray-800 dark:text-white">Contacts tab's associated
-                            content</strong>.
-                        Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript
-                        swaps
-                        classes to control the content visibility and styling.</p>
-                </div> -->
             </div>
         </div>
 
 
-        <!-- <div class="w-full mt-5 flex justify-around">
-            <button type="reset"
-                class="w-28 text-white border border-blue-700 bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-md text-xs py-2.5 text-center me-2 mb-2 font-bold dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:focus:ring-blue-800 ">Clear
-                Form</button>
-            <button type="text"
-                class="w-28 text-white border border-blue-700 bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-md text-xs py-2.5 text-center me-2 mb-2 font-bold dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:focus:ring-blue-800 ">On
-                Hand</button>
-            <div>
-                <button type="text"
-                    class="w-28 text-white border border-blue-700 bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-md text-xs py-2.5 text-center me-2 font-bold dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:focus:ring-blue-800 ">Approve</button>
-            </div>
-        </div> -->
     </div>
 
 

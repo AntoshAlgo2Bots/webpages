@@ -65,7 +65,7 @@
                             class="block  mb-2 font-bold text-xs font-medium text-gray-900 dark:text-white">Oraganigation
                             Name :
                         </label>
-                        <input type="text" placeholder="Enter oraganigation name"
+                        <input type="text" name="oraganigation_name" placeholder="Enter oraganigation name"
                             class="w-60 rounded-md border text-xs mb-4 border-gray-500 bg-white py-3 pl-2 text-[#6B7280] h-7 outline-none focus:border-[#6A64F1] focus:shadow-md" />
                     </div>
 
@@ -73,7 +73,7 @@
                         <label for="countries"
                             class="block mb-2 text-xs font-medium text-gray-900 dark:text-white">Oraganigation Type :
                         </label>
-                        <select id="countries"
+                        <select id="countries" name="oraganigation_type"
                             class="bg-gray-50 border border-gray-300 text-gray-900 text-xs   rounded-md focus:ring-blue-500 focus:border-blue-500 block w-60 h-7 pl-2 pt-1 mb-4  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                             <option selected disabled>Select One Type</option>
                             <option value="US">LLC</option>
@@ -87,7 +87,7 @@
                         <label for=""
                             class="block  mb-2 font-bold text-xs font-medium text-gray-900 dark:text-white">GST Number :
                         </label>
-                        <input type="text" placeholder="Enter GST number"
+                        <input type="text" name="gst_number" placeholder="Enter GST number"
                             class="w-60 rounded-md border text-xs border-gray-500 bg-white py-3 pl-2 text-[#6B7280] h-7 outline-none focus:border-[#6A64F1] focus:shadow-md" />
                     </div>
                 </div>
@@ -98,7 +98,7 @@
                             class="block  mb-2 font-bold text-xs font-medium text-gray-900 dark:text-white">Customer
                             Name :
                         </label>
-                        <input type="text" placeholder="Enter Customer name"
+                        <input type="text" name="customer_name" placeholder="Enter Customer name"
                             class="w-60 rounded-md border text-xs border-gray-500 bg-white py-3 pl-2 text-[#6B7280] h-7 outline-none focus:border-[#6A64F1] focus:shadow-md" />
                     </div>
 
@@ -107,7 +107,7 @@
                             class="block  mb-2 font-bold text-xs font-medium text-gray-900 dark:text-white">Customer
                             Type :
                         </label>
-                        <input type="text" placeholder="Enter Customer type"
+                        <input type="text" name="customer_type" placeholder="Enter Customer type"
                             class="w-60 rounded-md border text-xs border-gray-500 bg-white py-3 pl-2 text-[#6B7280] h-7 outline-none focus:border-[#6A64F1] focus:shadow-md" />
                     </div>
 
@@ -116,7 +116,7 @@
                             class="block  mb-2 font-bold text-xs font-medium text-gray-900 dark:text-white">Sub Customer
                             Type :
                         </label>
-                        <input type="text" placeholder="Enter sub Customer type"
+                        <input type="text" name="sub_customer_type" placeholder="Enter sub Customer type"
                             class="w-60 rounded-md border text-xs mb-4 border-gray-500 bg-white py-3 pl-2 text-[#6B7280] h-7 outline-none focus:border-[#6A64F1] focus:shadow-md" />
                     </div>
 
@@ -129,7 +129,7 @@
                             Status
                             :
                         </label>
-                        <input type="text" placeholder="Enter Customer status"
+                        <input type="text" name="customer_status" placeholder="Enter Customer status"
                             class="w-60 rounded-md border text-xs mb-4 border-gray-500 bg-white py-3 pl-2 text-[#6B7280] h-7 outline-none focus:border-[#6A64F1] focus:shadow-md" />
                     </div>
                     <div>
@@ -137,7 +137,7 @@
                             class="block  mb-2 font-bold text-xs font-medium text-gray-900 dark:text-white">Starting
                             Date :
                         </label>
-                        <input type="date"
+                        <input type="date" name="starting_date"
                             class="w-60 rounded-md border text-xs mb-4 border-gray-500 bg-white py-3 pl-2 text-[#6B7280] h-7 outline-none focus:border-[#6A64F1] focus:shadow-md" />
                     </div>
                     <div>
@@ -145,7 +145,7 @@
                             class="block  mb-2 font-bold text-xs font-medium text-gray-900 dark:text-white">Ending
                             Date :
                         </label>
-                        <input type="date"
+                        <input type="date" name="ending_date"
                             class="w-60 rounded-md border text-xs mb-4 border-gray-500 bg-white py-3 pl-2 text-[#6B7280] h-7 outline-none focus:border-[#6A64F1] focus:shadow-md" />
                     </div>
                 </div>
@@ -157,17 +157,17 @@
                             Person
                             Name :
                         </label>
-                        <input type="text" placeholder="Enter person name"
+                        <input type="text" name="contact_person_name" placeholder="Enter person name"
                             class="w-60 rounded-md border text-xs mb-4 border-gray-500 bg-white py-3 pl-2 text-[#6B7280] h-7 outline-none focus:border-[#6A64F1] focus:shadow-md" />
                     </div>
 
                     <div>
                         <label for=""
                             class="block  mb-2 font-bold text-xs font-medium text-gray-900 dark:text-white">Contact
-                            Person
+                            Person Email
                             :
                         </label>
-                        <input type="text" placeholder="Enter person "
+                        <input type="text" name="contact_person_email" placeholder="Enter person email"
                             class="w-60 rounded-md border text-xs mb-4 border-gray-500 bg-white py-3 pl-2 text-[#6B7280] h-7 outline-none focus:border-[#6A64F1] focus:shadow-md" />
                     </div>
 
@@ -177,7 +177,7 @@
                             Person
                             Number :
                         </label>
-                        <input type="text" placeholder="Enter person number"
+                        <input type="text" name="contact_person_number" placeholder="Enter person number"
                             class="w-60 rounded-md border text-xs border-gray-500 bg-white py-3 pl-2 text-[#6B7280] h-7 outline-none focus:border-[#6A64F1] focus:shadow-md" />
                     </div>
 
@@ -206,7 +206,7 @@
                             class="block  mb-2 font-bold text-xs font-medium text-gray-900 dark:text-white">Site
                             Code :
                         </label>
-                        <input type="text" placeholder="Enter person name"
+                        <input type="text" name="site_code" placeholder="Enter person name"
                             class="w-60 rounded-md border text-xs mb-4 border-gray-500 bg-white py-3 pl-2 text-[#6B7280] h-7 outline-none focus:border-[#6A64F1] focus:shadow-md" />
                     </div>
 
@@ -215,7 +215,7 @@
                             class="block  mb-2 font-bold text-xs font-medium text-gray-900 dark:text-white">Site
                             Name :
                         </label>
-                        <input type="text" placeholder="Enter person "
+                        <input type="text" name="site_name" placeholder="Enter person "
                             class="w-60 rounded-md border text-xs mb-4 border-gray-500 bg-white py-3 pl-2 text-[#6B7280] h-7 outline-none focus:border-[#6A64F1] focus:shadow-md" />
                     </div>
 
@@ -225,7 +225,7 @@
                             Description
                             :
                         </label>
-                        <input type="text" placeholder="Enter person number"
+                        <input type="text" name="site_description" placeholder="Enter person number"
                             class="w-60 rounded-md border text-xs border-gray-500 bg-white py-3 pl-2 text-[#6B7280] h-7 outline-none focus:border-[#6A64F1] focus:shadow-md" />
                     </div>
 
@@ -237,7 +237,7 @@
                             class="block  mb-2 font-bold text-xs font-medium text-gray-900 dark:text-white">Address Line
                             1 :
                         </label>
-                        <input type="text" placeholder="Enter address line 1"
+                        <input type="text" name="address_line_1" placeholder="Enter address line 1"
                             class="w-60 rounded-md border text-xs mb-4 border-gray-500 bg-white py-3 pl-2 text-[#6B7280] h-7 outline-none focus:border-[#6A64F1] focus:shadow-md" />
                     </div>
 
@@ -245,7 +245,7 @@
                         <label for="countries"
                             class="block mb-2 text-xs font-medium text-gray-900 dark:text-white">Address
                             Line 2 : </label>
-                        <input type="text" placeholder="Enter address line 2"
+                        <input type="text" name="address_line_2" placeholder="Enter address line 2"
                             class="w-60 rounded-md border text-xs border-gray-500 bg-white py-3 pl-2 text-[#6B7280] h-7 outline-none focus:border-[#6A64F1] focus:shadow-md" />
 
                     </div>
@@ -255,7 +255,7 @@
                             class="block  mb-2 font-bold text-xs font-medium text-gray-900 dark:text-white">Postal Code
                             :
                         </label>
-                        <input type="text" placeholder="Enter postal code"
+                        <input type="text" name="postal_code" placeholder="Enter postal code"
                             class="w-60 rounded-md border text-xs border-gray-500 bg-white py-3 pl-2 text-[#6B7280] h-7 outline-none focus:border-[#6A64F1] focus:shadow-md" />
                     </div>
 
@@ -266,7 +266,7 @@
                         <label for=""
                             class="block  mb-2 font-bold text-xs font-medium text-gray-900 dark:text-white">City :
                         </label>
-                        <input type="text" placeholder="Enter city name"
+                        <input type="text" name="city" placeholder="Enter city name"
                             class="w-60 rounded-md border text-xs mb-4 border-gray-500 bg-white py-3 pl-2 text-[#6B7280] h-7 outline-none focus:border-[#6A64F1] focus:shadow-md" />
                     </div>
 
@@ -275,7 +275,7 @@
                             class="block  mb-2 font-bold text-xs font-medium text-gray-900 dark:text-white">State
                             :
                         </label>
-                        <input type="text" placeholder="Enter state name"
+                        <input type="text" name="state" placeholder="Enter state name"
                             class="w-60 rounded-md border text-xs mb-4 border-gray-500 bg-white py-3 pl-2 text-[#6B7280] h-7 outline-none focus:border-[#6A64F1] focus:shadow-md" />
                     </div>
 
@@ -283,7 +283,7 @@
                         <label for="" class="block  mb-2 font-bold text-xs font-medium text-gray-900 dark:text-white">
                             Country :
                         </label>
-                        <input type="text" placeholder="Enter country name"
+                        <input type="text" name="country" placeholder="Enter country name"
                             class="w-60 rounded-md border text-xs border-gray-500 bg-white py-3 pl-2 text-[#6B7280] h-7 outline-none focus:border-[#6A64F1] focus:shadow-md" />
                     </div>
                 </div>
@@ -295,17 +295,17 @@
                             Person
                             Name :
                         </label>
-                        <input type="text" placeholder="Enter person name"
+                        <input type="text" name="contact_person_name" placeholder="Enter person name"
                             class="w-60 rounded-md border text-xs mb-4 border-gray-500 bg-white py-3 pl-2 text-[#6B7280] h-7 outline-none focus:border-[#6A64F1] focus:shadow-md" />
                     </div>
 
                     <div>
                         <label for=""
                             class="block  mb-2 font-bold text-xs font-medium text-gray-900 dark:text-white">Contact
-                            Person
+                            Person Email
                             :
                         </label>
-                        <input type="text" placeholder="Enter person "
+                        <input type="text" name="contact_person_email" placeholder="Enter person email"
                             class="w-60 rounded-md border text-xs mb-4 border-gray-500 bg-white py-3 pl-2 text-[#6B7280] h-7 outline-none focus:border-[#6A64F1] focus:shadow-md" />
                     </div>
 
@@ -315,7 +315,7 @@
                             Person
                             Number :
                         </label>
-                        <input type="text" placeholder="Enter person number"
+                        <input type="text" name="contact_person_number" placeholder="Enter person number"
                             class="w-60 rounded-md border text-xs border-gray-500 bg-white py-3 pl-2 text-[#6B7280] h-7 outline-none focus:border-[#6A64F1] focus:shadow-md" />
                     </div>
 
@@ -343,7 +343,7 @@
                     <label for="" class="block  mb-2 font-bold text-xs font-medium text-gray-900 dark:text-white">Site
                         Code :
                     </label>
-                    <input type="text" placeholder="Enter site code"
+                    <input type="text" name="site_code" placeholder="Enter site code"
                         class="w-60 rounded-md border text-xs mb-3 border-gray-500 bg-white py-3 pl-2 text-[#6B7280] h-7 outline-none focus:border-[#6A64F1] focus:shadow-md" />
                 </div>
 
@@ -354,7 +354,7 @@
                             class="block  mb-2 font-bold text-xs font-medium text-gray-900 dark:text-white">Branch Name
                             :
                         </label>
-                        <input type="text" placeholder="Enter branch name"
+                        <input type="text" name="branch_name" placeholder="Enter branch name"
                             class="w-60 rounded-md border text-xs mb-4 border-gray-500 bg-white py-3 pl-2 text-[#6B7280] h-7 outline-none focus:border-[#6A64F1] focus:shadow-md" />
                     </div>
 
@@ -362,7 +362,7 @@
                         <label for="countries"
                             class="block mb-2 text-xs font-medium text-gray-900 dark:text-white">Branch
                             Number : </label>
-                        <input type="text" placeholder="Enter brach number"
+                        <input type="text" name="branch_number" placeholder="Enter branch number"
                             class="w-60 rounded-md border text-xs border-gray-500 bg-white py-3 pl-2 text-[#6B7280] h-7 outline-none focus:border-[#6A64F1] focus:shadow-md" />
 
                     </div>
@@ -372,7 +372,7 @@
                             class="block  mb-2 font-bold text-xs font-medium text-gray-900 dark:text-white">Branch Type
                             :
                         </label>
-                        <input type="text" placeholder="Enter brach type"
+                        <input type="text" name="branch_type" placeholder="Enter branch type"
                             class="w-60 rounded-md border text-xs border-gray-500 bg-white py-3 pl-2 text-[#6B7280] h-7 outline-none focus:border-[#6A64F1] focus:shadow-md" />
                     </div>
 
@@ -384,7 +384,7 @@
                             class="block  mb-2 font-bold text-xs font-medium text-gray-900 dark:text-white">Bank
                             Name :
                         </label>
-                        <input type="text" placeholder="Enter bank name"
+                        <input type="text" name="bank_name" placeholder="Enter bank name"
                             class="w-60 rounded-md border text-xs mb-4 border-gray-500 bg-white py-3 pl-2 text-[#6B7280] h-7 outline-none focus:border-[#6A64F1] focus:shadow-md" />
                     </div>
 
@@ -394,7 +394,7 @@
                             Number
                             :
                         </label>
-                        <input type="text" placeholder="Enter bank number"
+                        <input type="text" name="bank_number" placeholder="Enter bank number"
                             class="w-60 rounded-md border text-xs mb-4 border-gray-500 bg-white py-3 pl-2 text-[#6B7280] h-7 outline-none focus:border-[#6A64F1] focus:shadow-md" />
                     </div>
 
@@ -402,7 +402,7 @@
                         <label for="" class="block  mb-2 font-bold text-xs font-medium text-gray-900 dark:text-white">
                             Bank Type :
                         </label>
-                        <input type="text" placeholder="Enter bank type"
+                        <input type="text" name="bank_type" placeholder="Enter bank type"
                             class="w-60 rounded-md border text-xs border-gray-500 bg-white py-3 pl-2 text-[#6B7280] h-7 outline-none focus:border-[#6A64F1] focus:shadow-md" />
                     </div>
                 </div>
@@ -412,7 +412,7 @@
                             class="block  mb-2 font-bold text-xs font-medium text-gray-900 dark:text-white">Account Name
                             :
                         </label>
-                        <input type="text" placeholder="Enter account name"
+                        <input type="text" name="account_name" placeholder="Enter account name"
                             class="w-60 rounded-md border text-xs mb-4 border-gray-500 bg-white py-3 pl-2 text-[#6B7280] h-7 outline-none focus:border-[#6A64F1] focus:shadow-md" />
                     </div>
 
@@ -422,7 +422,7 @@
                             Number
                             :
                         </label>
-                        <input type="text" placeholder="Enter account number"
+                        <input type="text" name="account_number" placeholder="Enter account number"
                             class="w-60 rounded-md border text-xs mb-4 border-gray-500 bg-white py-3 pl-2 text-[#6B7280] h-7 outline-none focus:border-[#6A64F1] focus:shadow-md" />
                     </div>
 
@@ -430,7 +430,7 @@
                         <label for="" class="block  mb-2 font-bold text-xs font-medium text-gray-900 dark:text-white">
                             Account Type :
                         </label>
-                        <input type="text" placeholder="Enter account type"
+                        <input type="text" name="account_type" placeholder="Enter account type"
                             class="w-60 rounded-md border text-xs border-gray-500 bg-white py-3 pl-2 text-[#6B7280] h-7 outline-none focus:border-[#6A64F1] focus:shadow-md" />
                     </div>
                 </div>
@@ -442,7 +442,7 @@
                                 Code :
                             </label>
                         </a>
-                        <input type="text" placeholder="Enter IFSC code"
+                        <input type="text" name="ifsc_code" placeholder="Enter IFSC code"
                             class="w-60 rounded-md border text-xs mb-4 border-gray-500 bg-white py-3 pl-2 text-[#6B7280] h-7 outline-none focus:border-[#6A64F1] focus:shadow-md" />
                     </div>
                 </div>

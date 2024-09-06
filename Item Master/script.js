@@ -43,10 +43,10 @@ function bulb() {
     }
 
     var y = document.getElementById("wire");
-     y.style.display = "none"
+    y.style.display = "none"
 
     var z = document.getElementById("holder");
-     z.style.display = "none"
+    z.style.display = "none"
 
     console.log("asdf")
 }
@@ -60,7 +60,7 @@ function urn() {
         x.style.display = "none";
     }
 
-    
+
     var y = document.getElementById("pipe");
     y.style.display = "none";
 
@@ -78,10 +78,10 @@ function pipe() {
     } else {
         y.style.display = "none";
     }
-    
+
     var x = document.getElementById("urn");
     x.style.display = "none";
-    
+
     var z = document.getElementById("arm");
     z.style.display = "none";
 
@@ -105,7 +105,7 @@ function arm() {
 
     var w = document.getElementById("shade");
     w.style.display = "none";
-    
+
 }
 
 function shade() {
@@ -133,7 +133,7 @@ function plate() {
     } else {
         y.style.display = "none";
     }
-    
+
     var z = document.getElementById("centre_pipe");
     z.style.display = "none"
 }
@@ -158,7 +158,7 @@ function paper() {
     } else {
         y.style.display = "none";
     }
-    
+
     var z = document.getElementById("ball_pen");
     z.style.display = "none"
 }
@@ -225,4 +225,194 @@ function table_lamps() {
     var x = document.getElementById("chandelier");
     x.style.display = "none"
 
+}
+
+
+function shades_acrylic() {
+    var y = document.getElementById("shades_acrylic");
+    if (y.style.display === "none") {
+        y.style.display = "block";
+    } else {
+        y.style.display = "none";
+    }
+
+
+    var z = document.getElementById("pipe_acrylic");
+    z.style.display = "none"
+
+}
+
+
+
+// ---------------Acrylic Script--------------------------
+
+function pipe_acrylic() {
+    var y = document.getElementById("pipe_acrylic");
+    if (y.style.display === "none") {
+        y.style.display = "block";
+    } else {
+        y.style.display = "none";
+    }
+
+
+    var z = document.getElementById("shades_acrylic");
+    z.style.display = "none"
+
+}
+
+
+function chandelier_crystal() {
+    var y = document.getElementById("chandelier_crystal");
+    if (y.style.display === "none") {
+        y.style.display = "block";
+    } else {
+        y.style.display = "none";
+    }
+
+
+    var z = document.getElementById("shades_acrylic");
+    z.style.display = "none"
+
+}
+
+
+// ---------------Packaging Script--------------------------
+
+function carton() {
+    var y = document.getElementById("carton");
+    if (y.style.display === "none") {
+        y.style.display = "block";
+    } else {
+        y.style.display = "none";
+    }
+
+
+    var z = document.getElementById("air_bubble");
+    z.style.display = "none"
+
+    var w = document.getElementById("thermocol");
+    w.style.display = "none";
+
+    var x = document.getElementById("self_adhesive_tapes");
+    x.style.display = "none";
+    
+
+}
+
+
+function air_bubble() {
+    var y = document.getElementById("air_bubble");
+    if (y.style.display === "none") {
+        y.style.display = "block";
+    } else {
+        y.style.display = "none";
+    }
+
+
+    var z = document.getElementById("carton");
+    z.style.display = "none";
+
+    var w = document.getElementById("thermocol");
+    w.style.display = "none";
+
+    var x = document.getElementById("self_adhesive_tapes");
+    x.style.display = "none";
+    
+
+}
+
+function thermocol() {
+    var y = document.getElementById("thermocol");
+    if (y.style.display === "none") {
+        y.style.display = "block";
+    } else {
+        y.style.display = "none";
+    }
+
+
+    var z = document.getElementById("carton");
+    z.style.display = "none"
+
+    var w = document.getElementById("self_adhesive_tapes");
+    w.style.display = "none"
+
+    var x = document.getElementById("air_bubble");
+    x.style.display = "none"
+
+}
+
+function self_adhesive_tapes() {
+    var y = document.getElementById("self_adhesive_tapes");
+    if (y.style.display === "none") {
+        y.style.display = "block";
+    } else {
+        y.style.display = "none";
+    }
+
+
+    var z = document.getElementById("carton");
+    z.style.display = "none"
+
+    var w = document.getElementById("thermocol");
+    w.style.display = "none"
+
+    var x = document.getElementById("air_bubble");
+    x.style.display = "none"
+
+}
+
+
+// ---------Consubale Installation Script----------------
+
+
+function fasteners() {
+    var y = document.getElementById("fasteners");
+    if (y.style.display === "none") {
+        y.style.display = "block";
+    } else {
+        y.style.display = "none";
+    }
+
+
+    var z = document.getElementById("screw_fasteners");
+    z.style.display = "none";
+
+    var w = document.getElementById("concrete_screw");
+    w.style.display = "none";
+
+}
+
+function screw_fasteners() {
+    var y = document.getElementById("screw_fasteners");
+    if (y.style.display === "none") {
+        y.style.display = "block";
+    } else {
+        y.style.display = "none";
+    }
+
+
+    var z = document.getElementById("fasteners");
+    z.style.display = "none"
+
+    var w = document.getElementById("concrete_screw");
+    w.style.display = "none"
+
+
+}
+
+function concrete_screw() {
+    var y = document.getElementById("concrete_screw");
+    if (y.style.display === "none") {
+        y.style.display = "block";
+    } else {
+        y.style.display = "none";
+    }
+
+
+    var z = document.getElementById("screw_fasteners");
+    z.style.display = "none"
+
+    var w = document.getElementById("fasteners");
+    w.style.display = "none"
+    
 }

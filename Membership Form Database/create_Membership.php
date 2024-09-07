@@ -176,9 +176,11 @@
                     url: 'action.php',
                     method: 'POST',
                     data: formData,
-                    processData: false,
-                    contentType: false,
+                   
                     success: function (response) {
+
+
+                        console.log(response)
                         alert('Your form has been sent successfully.');
                     },  
                     error: function (xhr, status, error) {
@@ -186,7 +188,7 @@
                         console.error(error);
                     }
                 });
-                var form = document.getElementById('myForm').reset();
+                // var form = document.getElementById('myForm').reset();
             });
         });
     </script>

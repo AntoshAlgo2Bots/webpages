@@ -17,7 +17,7 @@
     <title>Login page</title>
 </head>
 <style>
-    .companyLogo {
+        .companyLogo {
         position: fixed;
         display: flex;
         top: 80%;
@@ -39,13 +39,13 @@
             <h2 class="mt-6 text-center text-3xl leading-9 font-extrabold text-gray-900">
                 Login to your account
             </h2>
-            <p class="mt-2 text-center text-sm leading-5 text-gray-500 max-w">
+            <!-- <p class="mt-2 text-center text-sm leading-5 text-gray-500 max-w">
                 Or
                 <a href="#"
                     class="font-medium text-blue-600 hover:text-blue-500 focus:outline-none focus:underline transition ease-in-out duration-150">
                     Create a new account
                 </a>
-            </p>
+            </p> -->
         </div>
 
         <div class="mt-8 w-[80%] ">

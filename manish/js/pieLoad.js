@@ -3,7 +3,7 @@ $(document).ready(function () {
     google.charts.load("current", { packages: ["corechart"] });
 
     async function dataChart() {
-      var data = await google.visualization.arrayToDataTable(data_pie);
+      var data =  await google.visualization.arrayToDataTable(data_pie);
 
       //   console.log(data);
 
@@ -11,8 +11,6 @@ $(document).ready(function () {
         title: title,
         pieHole: 0.4,
         is3D: true,
-        'width': 500,
-        'height': 250,
         pieSliceTextStyle: {
           color: "white",
         },
@@ -40,7 +38,7 @@ $(document).ready(function () {
     //     title: "My Daily Activities",
     //     // is3D: true,
     //   };
-
+        
     //   //  var chart =  new  google.visualization.PieChart(
     //   //   document.getElementById("")
     //   // );
@@ -66,25 +64,36 @@ $(document).ready(function () {
     {
       pieChartData: "pieChartData",
     },
-    async function (data) {
+    async function (data) { 
       console.log(data);
 
-      let purchase_order = data.purchaseOrder.Indexes;
-      let itemrequest = data.itemrequest.Indexes;
-      let requisition_table = data.requisition_table.Indexes;
-      let grnStatus = data.grnStatus.Indexes;
-      let Lead_status = data.Lead_status.Indexes;
+      let receipt_details = data.receipt_details.Indexes;
+      let activeMembership = data.activeMembership.Indexes;
+      let paidMmbersByYear = data.paidMmbersByYear.Indexes;
+      let paidUnpaidByYear = data.paidUnpaidByYear
+      let paidStatements = data.paidStatements
+      // let grnStatus = data.grnStatus.Indexes;
 
       //   console.log(purchase_order);
 
-      await setDataOfPie(requisition_table, "PR Requests", "pr_requests");
-      await setDataOfPie(purchase_order, "Purchase Order", "purchase_order");
-      await setDataOfPie(itemrequest, "Item Request", "item_requests");
-      await setDataOfPie(grnStatus, "GRN status", "GRN_status");
-      await setDataOfPie(Lead_status, "Lead Status", "Lead_status_box");
+      // await setDataOfPie(requisition_table, "PR Requests", "pr_requests");
+      await setDataOfPie(receipt_details, "Membership Statics", "receipt_details");
+      await setDataOfPie(activeMembership, "Active members", "activeMembership");
+      await setDataOfPie(paidMmbersByYear, "Year by reciept created", "paidMmbersByYear");
+      await setDataOfPie(paidUnpaidByYear, "Statics By year", "paidUnpaidByYear");
+      await setDataOfPie(paidStatements, "Statics By year", "paidStatements");
+
+
+      
+
+
+
+
+
+      
     },
     "json"
-  ).fail(error => {
+  ).fail(error=>{
     console.log(error);
   })
 });

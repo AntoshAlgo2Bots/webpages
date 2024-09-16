@@ -6,8 +6,8 @@
 $con = mysqli_connect(
     "localhost",
     "root",
-    "Algo@123",
-    "for_Office"
+    "root",
+    "membership_project"
 );
 
 
@@ -15,5 +15,4 @@ $con = mysqli_connect(
 if (mysqli_connect_error()) {
     echo "Connection Error.<br>";
 }
-
 

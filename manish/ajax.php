@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-include('./dbconnection/db.php');
+include('./db.php');
 
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -19,9 +19,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $password = $_POST['password'];
 
 
-        $sql = "SELECT * from user_management where user_name='$username' ;";
+        $sql = "SELECT * from user_info where user_name='$username' ;";
 
-        $result = mysqli_query($con, $sql);
+        $result = mysqli_query($conn, $sql);
 
 
 
@@ -31,6 +31,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             echo "user found<br>";
 
             $row = mysqli_fetch_assoc($result);
+
+            echo "Success user found\n";
+        
+            echo $row['password']."\n";
+            
             if ($row["password"] == $password) {
                 // echo $row["mobile_number"];
 
@@ -38,30 +43,30 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 $respone["loggedIn"] = "true";
                 $respone["message"] = "success";
                 $_SESSION["username"] = $row["user_name"];
-                $_SESSION["user_id"] = $row["user_id"];
-                $_SESSION["role"] = $row["role"];
-                $user_id = $row["user_id"];
+                $_SESSION["user_id"] = $row["id"];
+ 
+                $user_id = $row["id"];
 
 
                 $sql = "SELECT * FROM for_office.admin_roles WHERE admin_id = $user_id;";
 
-                $result = mysqli_query($con, $sql);
+                $result = mysqli_query($conn, $sql);
 
 
                 $row = mysqli_fetch_assoc($result);
 
                 // Convert values to integers
-                $_SERVER["user_viewOnly"] = (int) $row["user_viewOnly"];
-                $_SERVER["user_write"] = (int) $row["user_write"];
-                $_SESSION["admin_viewOnly"] = (int) $row["admin_viewOnly"];
-                $_SESSION["admin_write"] = (int) $row["admin_write"];
-                $_SESSION["admin_write"] = (int) $row["admin_write"];
-                $_SESSION["store_manager"] = (int) $row["store_manager"];
-                $_SESSION["store_isseuer"] = (int) $row["store_isseuer"];
-                $_SESSION["store_genrate"] = (int) $row["store_genrate"];
-                $_SESSION["PO_appover"] = (int) $row["PO_appover"];
+                // $_SERVER["user_viewOnly"] = (int) $row["user_viewOnly"];
+                // $_SERVER["user_write"] = (int) $row["user_write"];
+                // $_SESSION["admin_viewOnly"] = (int) $row["admin_viewOnly"];
+                // $_SESSION["admin_write"] = (int) $row["admin_write"];
+                // $_SESSION["admin_write"] = (int) $row["admin_write"];
+                // $_SESSION["store_manager"] = (int) $row["store_manager"];
+                // $_SESSION["store_isseuer"] = (int) $row["store_isseuer"];
+                // $_SESSION["store_genrate"] = (int) $row["store_genrate"];
+                // $_SESSION["PO_appover"] = (int) $row["PO_appover"];
 
-                $yes = $_SERVER["user_viewOnly"];
+                // $yes = $_SERVER["user_viewOnly"];
                 // $user_write = (int) $row["user_write"];
                 // $admin_viewOnly = (int) $row["admin_viewOnly"];
                 // $admin_write = (int) $row["admin_write"];
@@ -72,7 +77,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 // echo "<script>alert(")</script>"
 
                 // Display the values
-                header("location:dashboard.php");
+                header("location:testdash.php");
 
 
 
@@ -94,6 +99,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $respone["message"] = "User not found";
         } else {
             header("location:login.php");
+            echo mysqli_error($conn);
+            echo "Get erro";
         }
 
         // echo $respone;
@@ -124,7 +131,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 
             try {
-                $result = mysqli_query($con, $sql);
+                $result = mysqli_query($conn, $sql);
             } catch (\Throwable $th) {
                 echo "new record genration gailed";
             }
@@ -133,7 +140,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             if ($result) {
 
                 echo "new record gereated success fully";
-                $record_id = mysqli_insert_id($con);
+                $record_id = mysqli_insert_id($conn);
                 $_SESSION["record_id"] = $record_id;
             } else {
                 header("location:home.php");
@@ -166,7 +173,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 
 
-            $result = mysqli_query($con, $sql);
+            $result = mysqli_query($conn, $sql);
 
 
 
@@ -193,7 +200,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
 
         $sql = "SELECT item_code FROM for_office.item_master_main;";
 
-        $result = mysqli_query($con, $sql);
+        $result = mysqli_query($conn, $sql);
 
 
         $data = [];
@@ -213,7 +220,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
 
         $sql = "SELECT Short_Description FROM for_office.item_master_main where item_code= '$item_Code';";
 
-        $result = mysqli_query($con, $sql);
+        $result = mysqli_query($conn, $sql);
 
 
 
@@ -245,7 +252,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
         $sql = "SELECT imagePath FROM for_office.item_master_main where item_code = '$item_code' ; ";
 
 
-        $result = mysqli_query($con, $sql);
+        $result = mysqli_query($conn, $sql);
 
 
         if ($result) {
@@ -263,7 +270,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
 
             $respone['success'] = false;
             $respone['message'] = 'Something went wrong';
-            $respone['error'] = mysqli_error( $con);
+            $respone['error'] = mysqli_error($conn);
             $respone['sql_error'] = $sql;
 
 
